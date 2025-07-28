@@ -152,7 +152,7 @@ else
     info ""
     info "Installing Mariner"
     sudo apt -y install libxslt1.1 -y
-    sudo dpkg -i mariner3d_0.3.0-1_armhf.deb
+    sudo dpkg -i mariner3d_0.3.0-1_armhf.deb -y
 
     while true
     do
