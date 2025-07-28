@@ -8,7 +8,7 @@ It will expand the filesystem to the full size of your SD card, install Mariner,
 
 ### Download
 Either from this Github or using
-`wget https://raw.githubusercontent.com/KTheMan/Mariner-Autoinstaller/main/mariner.sh`
+`wget https://raw.githubusercontent.com/dprossner/Mariner-Autoinstaller/main/mariner.sh`
 
 ### Prepare for execution
 `sudo chmod +x ./mariner.sh`
