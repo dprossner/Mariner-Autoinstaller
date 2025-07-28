@@ -101,6 +101,11 @@ else
     
     info "downloading Mariner"
     wget https://github.com/amd989/mariner/releases/download/v0.3.0-1/mariner3d_0.3.0-1_armhf.deb
+    
+    info ""
+    info "Installing Mariner"
+    sudo apt -y install libxslt1.1 -y
+    sudo dpkg -i mariner3d_0.3.0-1_armhf.deb -y
 
     # info "Updating repositories and upgrade software; this could take a long time"
     # sudo apt-get -qq update >/dev/null && sudo apt-get -qq -y upgrade >/dev/null
@@ -149,10 +154,6 @@ else
     force user = root
     force group = root" >> /etc/samba/smb.conf
 
-    info ""
-    info "Installing Mariner"
-    sudo apt -y install libxslt1.1 -y
-    sudo dpkg -i mariner3d_0.3.0-1_armhf.deb -y
 
     while true
     do
