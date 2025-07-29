@@ -1,3 +1,5 @@
+### Adapted to use an 8GB virtual drive and install the mariner fork by @beaudeanadams with support for firmware 4.4.3
+
 ## See https://github.com/luizribeiro/mariner/ for info on hardware requirements and the origin of the main compenent that this script installs.
 
 # Mariner Autoinstaller
