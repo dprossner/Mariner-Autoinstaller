@@ -99,16 +99,8 @@ else
     sudo rm -f ./resume-mariner
     # continue with rest of the script
     
-    sudo apt update
-    
-    info ""
-    info "Installing Mariner"
-    wget https://github.com/amd989/mariner/releases/download/v0.3.0-1/mariner3d_0.3.0-1_armhf.deb
-    sudo apt -y install libxslt1.1
-    sudo dpkg -i mariner3d_0.3.0-1_armhf.deb
-
-    # info "Updating repositories and upgrade software; this could take a long time"
-    # sudo apt-get -qq update >/dev/null && sudo apt-get -qq -y upgrade >/dev/null
+    info "Updating repositories and upgrade software; this could take a long time"
+    sudo apt-get -qq update >/dev/null && sudo apt-get -qq -y upgrade >/dev/null
 
     info
     info "Setting up Mariner prerequisites"
@@ -119,7 +111,7 @@ else
 
     info
     info "Setting up Pi-USB; this could take several minutes"
-    sudo dd bs=1M if=/dev/zero of=/piusb.bin count=8192
+    sudo dd bs=1M if=/dev/zero of=/piusb.bin count=4096
     sudo mkdosfs /piusb.bin -F 32 -I
     sudo mkdir /mnt/usb_share
     echo "/piusb.bin            /mnt/usb_share  vfat    users,umask=000   0       2 " >> /etc/fstab
@@ -154,6 +146,8 @@ else
     force user = root
     force group = root" >> /etc/samba/smb.conf
 
+    info ""
+    info "Installing Mariner"
 
     while true
     do
