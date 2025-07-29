@@ -111,7 +111,7 @@ else
 
     info
     info "Setting up Pi-USB; this could take several minutes"
-    sudo dd bs=1M if=/dev/zero of=/piusb.bin count=4096
+    sudo dd bs=1M if=/dev/zero of=/piusb.bin count=8196
     sudo mkdosfs /piusb.bin -F 32 -I
     sudo mkdir /mnt/usb_share
     echo "/piusb.bin            /mnt/usb_share  vfat    users,umask=000   0       2 " >> /etc/fstab
