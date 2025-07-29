@@ -100,6 +100,7 @@ else
     # continue with rest of the script
     
     info "downloading Mariner"
+    sudo apt update
     wget https://github.com/amd989/mariner/releases/download/v0.3.0-1/mariner3d_0.3.0-1_armhf.deb
     
     info ""
