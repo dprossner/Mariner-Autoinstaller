@@ -104,8 +104,8 @@ else
     info ""
     info "Installing Mariner"
     wget https://github.com/amd989/mariner/releases/download/v0.3.0-1/mariner3d_0.3.0-1_armhf.deb
-    sudo apt -y install libxslt1.1 -y
-    sudo dpkg -i mariner3d_0.3.0-1_armhf.deb -y
+    sudo apt -y install libxslt1.1
+    sudo dpkg -i mariner3d_0.3.0-1_armhf.deb
 
     # info "Updating repositories and upgrade software; this could take a long time"
     # sudo apt-get -qq update >/dev/null && sudo apt-get -qq -y upgrade >/dev/null
