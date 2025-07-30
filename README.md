@@ -14,7 +14,7 @@ If you've already expanded your filesystem (seems to be done automatically on bo
 
 ### Download
 Either from this Github or using
-`wget https://raw.githubusercontent.com/dprossner/Mariner-Autoinstaller/refs/heads/Testing/mariner.sh`
+`wget https://raw.githubusercontent.com/dprossner/Mariner-Autoinstaller/refs/heads/beaudeanadams/mariner.sh`
 
 ### Prepare for execution
 `sudo chmod +x ./mariner.sh`
