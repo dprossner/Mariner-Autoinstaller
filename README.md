@@ -1,4 +1,4 @@
-### Fixed a bug preventing input for smb share name from being asked for, added virtual drive size customization, and modified to install the archived mariner fork by @beaudeanadams with support for firmware 4.4.3
+### Fixed a bug preventing input for smb share name from being asked for, added virtual drive size customization, and modified to install the archived mariner fork by @bluefinbima with support for firmware 4.4.3
 
 ## See https://github.com/luizribeiro/mariner/ for info on hardware requirements and the origin of the main compenent that this script installs.
 
