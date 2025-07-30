@@ -155,7 +155,7 @@ else
      sudo rm -rf main.js
      sudo wget https://gist.githubusercontent.com/badsmoke/e656e589dc49183b2d0eb2e586b4fc9c/raw/5eca602d8cc3d3a8696d5adfd563dc29999c32e7/main.js
      cd ~
-
+     sudo systemctl status mariner3d
     
     while true
     do
