@@ -148,9 +148,14 @@ else
 
     info ""
    # info "Installing Mariner"
-    # sudo apt install -y libxslt1.1
-    # wget https://github.com/beaudeanadams/mariner/releases/download/v0.2.1-1/mariner3d_0.2.1-1_armhf.deb
-    # sudo dpkg -i mariner3d_0.2.1-1_armhf.deb
+     sudo apt install -y libxslt1.1
+     wget https://github.com/BlueFinBima/mariner/releases/download/v0.2.0-1/mariner3d_0.2.0-1_armhf.deb
+     sudo dpkg -i mariner3d_0.2.1-1_armhf.deb
+     cd /opt/venvs/mariner3d/dist
+     sudo rm -rf main.js
+     sudo wget https://gist.githubusercontent.com/badsmoke/e656e589dc49183b2d0eb2e586b4fc9c/raw/5eca602d8cc3d3a8696d5adfd563dc29999c32e7/main.js
+     cd ~
+
     
     while true
     do
