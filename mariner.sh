@@ -109,9 +109,9 @@ else
     sudo sed -i 's/console=serial0,115200 //g' /boot/cmdline.txt
     echo -n " modules-load=dwc2" >> /boot/cmdline.txt
 
-    info
+    read -r -p "How big do you want your virtual drive to be? (MB, use multiples of 1024): "  size
     info "Setting up Pi-USB; this could take several minutes"
-    sudo dd bs=1M if=/dev/zero of=/piusb.bin count=8196
+    sudo dd bs=1M if=/dev/zero of=/piusb.bin count=$size
     sudo mkdosfs /piusb.bin -F 32 -I
     sudo mkdir /mnt/usb_share
     echo "/piusb.bin            /mnt/usb_share  vfat    users,umask=000   0       2 " >> /etc/fstab
