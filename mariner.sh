@@ -148,9 +148,12 @@ else
 
     info ""
     info "Installing Mariner"
-    sudo apt install -y libxslt1.1
+    sudo apt install -y libxslt1.1 distutils.util python3-venv
     wget https://github.com/amd989/mariner/releases/download/v0.3.0-1/mariner3d_0.3.0-1_armhf.deb
     sudo dpkg -i mariner3d_0.3.0-1_armhf.deb
+    sudo /opt/venvs/mariner3d/bin/pip3 uninstall -y werkzeug
+    sudo /opt/venvs/mariner3d/bin/pip3 install -y Werkzeug==2.2.0
+    sudo systemctl restart mariner3d
     
     while true
     do
