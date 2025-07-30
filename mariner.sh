@@ -152,7 +152,7 @@ else
     wget https://github.com/amd989/mariner/releases/download/v0.3.0-1/mariner3d_0.3.0-1_armhf.deb
     sudo dpkg -i mariner3d_0.3.0-1_armhf.deb
     sudo /opt/venvs/mariner3d/bin/pip3 uninstall -y werkzeug
-    sudo /opt/venvs/mariner3d/bin/pip3 install -y Werkzeug==2.2.0
+    sudo /opt/venvs/mariner3d/bin/pip3 install Werkzeug==2.2.0
     sudo systemctl restart mariner3d
     
     while true
