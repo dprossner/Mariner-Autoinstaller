@@ -18,7 +18,7 @@ if [ ! -f ./resume-mariner ]; then
     
     # run your scripts here
     info
-    info "Welcome to Kenzillla's Mariner+Samba Auto-Installer!"
+    info "Welcome to dprossner's Mariner+Samba Auto-Installer!"
     sleep .1
     info "..."
 
