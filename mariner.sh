@@ -147,10 +147,10 @@ else
     force group = root" >> /etc/samba/smb.conf
 
     info ""
-    info "Installing Mariner"
-    sudo apt install -y libxslt1.1
-    wget https://github.com/beaudeanadams/mariner/releases/download/v0.2.1-1/mariner3d_0.2.1-1_armhf.deb
-    sudo dpkg -i mariner3d_0.2.1-1_armhf.deb
+   # info "Installing Mariner"
+    # sudo apt install -y libxslt1.1
+    # wget https://github.com/beaudeanadams/mariner/releases/download/v0.2.1-1/mariner3d_0.2.1-1_armhf.deb
+    # sudo dpkg -i mariner3d_0.2.1-1_armhf.deb
     
     while true
     do
