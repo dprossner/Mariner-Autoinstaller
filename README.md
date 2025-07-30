@@ -8,8 +8,8 @@ This script is intended for a fresh Rasbian Lite installation on a Raspberry Pi 
 
 It will expand the filesystem to the full size of your SD card, install Mariner, set up a folder on the Pi as a USB drive, create a sambashare, and a couple other things.
 ### Skip Configuration
-If you've already expanded your filesystem, set your hostname, and changed your password, you can skip those steps in the script by running
-`sudo touch ./resume-mariner`, which creates a file that tells the script these tasks have been completed. Just make sure all background tasks from first boot are done.
+If you've already expanded your filesystem (seems to be done automatically on boot in modern versions of PiOS), and changed your hostname and password, you can skip those steps in the script by running
+`sudo touch ./resume-mariner`, which creates a file that tells the script these tasks have been completed. Just make sure all background tasks from initial boot are done.
 
 
 ### Download
