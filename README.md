@@ -1,4 +1,4 @@
-### Fixed a bug preventing input for smb share name from being asked for, added virtual drive size customization, and modified to install the mariner fork by @beaudeanadams with support for firmware 4.4.3
+### Fixed a bug preventing input for smb share name from being asked for, added virtual drive size customization, and modified to install the archived mariner fork by @beaudeanadams with support for firmware 4.4.3
 
 ## See https://github.com/luizribeiro/mariner/ for info on hardware requirements and the origin of the main compenent that this script installs.
 
@@ -14,7 +14,7 @@ If you've already expanded your filesystem (seems to be done automatically on bo
 
 ### Download
 Either from this Github or using
-`wget https://github.com/dprossner/Mariner-Autoinstaller/blob/Testing/mariner.sh`
+`wget https://raw.githubusercontent.com/dprossner/Mariner-Autoinstaller/refs/heads/bluefinbima/mariner.sh`
 
 ### Prepare for execution
 `sudo chmod +x ./mariner.sh`
